@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solomon | Experience</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-neutral-950 text-neutral-100 min-h-screen flex flex-col">
+  <!-- Top Nav -->
+  <header class="border-b border-neutral-800">
+    <nav class="mx-auto max-w-5xl px-4 py-4 flex flex-wrap items-center justify-between gap-3">
+      <a href="index.html" class="font-semibold tracking-wide">Your Name</a>
+
+      <div class="flex flex-wrap gap-3 text-sm text-neutral-300">
+        <a class="hover:text-amber-300" href="objective.html">Objective</a>
+        <a class="hover:text-amber-300" href="education.html">Education</a>
+        <a class="hover:text-amber-300" href="skills.html">Skills</a>
+        <a class="hover:text-amber-300" href="experience.html">Experience</a>
+        <a class="hover:text-amber-300" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="mx-auto max-w-5xl px-4 py-10 flex-grow">
+    <h1 class="text-3xl font-bold">Experience</h1>
+
+    <div class="mt-6 space-y-4">
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h2 class="text-xl font-semibold">Project / Role Title</h2>
+            <span class="text-sm text-neutral-400">YYYY – YYYY</span>
+        </div>
+        <p class="mt-1 text-neutral-300">Company / Class / Organization</p>
+
+        <ul class="mt-4 list-disc pl-5 text-neutral-300 space-y-1">
+            <li>Bullet describing what you did and the outcome.</li>
+            <li>Bullet describing a tool you used (Git, HTML, JS, etc.).</li>
+            <li>Bullet describing collaboration or leadership.</li>
+        </ul>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h2 class="text-xl font-semibold">Another Role / Project</h2>
+            <span class="text-sm text-neutral-400">YYYY – YYYY</span>
+        </div>
+        <p class="mt-1 text-neutral-300">Company / Class / Organization</p>
+
+        <ul class="mt-4 list-disc pl-5 text-neutral-300 space-y-1">
+            <li>Bullet describing responsibility and impact.</li>
+            <li>Bullet describing a skill (communication, problem solving).</li>
+        </ul>
+        </div>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="border-t border-neutral-800">
+    <div class="mx-auto max-w-5xl px-4 py-6 text-sm text-neutral-400">
+      © <span id="year"></span> Your Name
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solomon | Skills</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-neutral-950 text-neutral-100 min-h-screen flex flex-col">
+  <!-- Top Nav -->
+  <header class="border-b border-neutral-800">
+    <nav class="mx-auto max-w-5xl px-4 py-4 flex flex-wrap items-center justify-between gap-3">
+      <a href="index.html" class="font-semibold tracking-wide">Your Name</a>
+
+      <div class="flex flex-wrap gap-3 text-sm text-neutral-300">
+        <a class="hover:text-amber-300" href="objective.html">Objective</a>
+        <a class="hover:text-amber-300" href="education.html">Education</a>
+        <a class="hover:text-amber-300" href="skills.html">Skills</a>
+        <a class="hover:text-amber-300" href="experience.html">Experience</a>
+        <a class="hover:text-amber-300" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="mx-auto max-w-5xl px-4 py-10 flex-grow">
+    <h1 class="text-3xl font-bold">Skills</h1>
+
+    <div class="mt-6 grid gap-4 md:grid-cols-2">
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6">
+        <h2 class="text-lg font-semibold">Technical</h2>
+        <ul class="mt-3 list-disc pl-5 text-neutral-300 space-y-1">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Bootstrap (and Tailwind basics)</li>
+            <li>Git & GitHub</li>
+            <li>Node.js / Express (beginner)</li>
+        </ul>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6">
+        <h2 class="text-lg font-semibold">Professional</h2>
+        <ul class="mt-3 list-disc pl-5 text-neutral-300 space-y-1">
+            <li>Team collaboration</li>
+            <li>Communication</li>
+            <li>Problem solving</li>
+            <li>Time management</li>
+        </ul>
+        </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-neutral-800">
+    <div class="mx-auto max-w-5xl px-4 py-6 text-sm text-neutral-400">
+      © <span id="year"></span> Your Name
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

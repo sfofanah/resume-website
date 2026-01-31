@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solomon | Resume</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-neutral-950 text-neutral-100 min-h-screen flex flex-col">
+  <!-- Top Nav -->
+  <header class="border-b border-neutral-800">
+    <nav class="mx-auto max-w-5xl px-4 py-4 flex flex-wrap items-center justify-between gap-3">
+      <a href="index.html" class="font-semibold tracking-wide">Your Name</a>
+
+      <div class="flex flex-wrap gap-3 text-sm text-neutral-300">
+        <a class="hover:text-amber-300" href="objective.html">Objective</a>
+        <a class="hover:text-amber-300" href="education.html">Education</a>
+        <a class="hover:text-amber-300" href="skills.html">Skills</a>
+        <a class="hover:text-amber-300" href="experience.html">Experience</a>
+        <a class="hover:text-amber-300" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="mx-auto max-w-5xl px-4 py-10 flex-grow">
+    <section class="grid gap-8 md:grid-cols-[180px_1fr] items-start">
+      <div class="h-44 w-44 rounded-2xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-400">
+        Your Photo
+      </div>
+
+      <div>
+        <h1 class="text-3xl font-bold">Your Full Name</h1>
+        <p class="mt-2 text-neutral-300">
+          1–2 sentence intro about who you are and what you’re looking for.
+        </p>
+
+        <div class="mt-4 text-sm text-neutral-300 space-y-1">
+          <p>Email: yourname@email.com</p>
+          <p>Phone: (000) 000-0000</p>
+          <p>Location: City, State</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-neutral-800">
+    <div class="mx-auto max-w-5xl px-4 py-6 text-sm text-neutral-400">
+      © <span id="year"></span> Your Name
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
